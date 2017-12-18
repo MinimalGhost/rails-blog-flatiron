@@ -1,4 +1,6 @@
-<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+<%= render 'form' %>
+<!-- <%= form_with scope: :article, url: articles_path, local: true do |form| %>
+
   <p>
     <%= form.label :title %><br>
     <%= form.text_field :title %>
@@ -12,6 +14,6 @@
   <p>
     <%= form.submit %>
   </p>
-<% end %>
-<!-- link back to /articles/index -->
+<% end %> -->
+<!-- navigates back to /articles/index -->
 <%= link_to 'Back', articles_path %>
